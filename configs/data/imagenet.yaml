@@ -1,0 +1,14 @@
+_target_: src.data.imagenet_datamodule.ImageNetDataModule
+data_dir: ${paths.data_dir}/datasets
+batch_size: 50
+num_workers: 0
+pin_memory: False
+resize: 256
+resize_mode: "bilinear"
+crop: 224
+
+modality: image
+
+weights_resnet: "IMAGENET1K_V1"
+weights_effnet: "IMAGENET1K_V1"
+weights_vit: True
